@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #b8e994;
+}
+
+html {
+    font-family: 'Anek Malayalam', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+footer{
+    background-color: #144878;
+    color: #AEDBCE;
+    padding: 30px;
+    text-align: center;
+}
+
+td {
+    display: block;
+    width: 100%;
+}
+
+td a:hover {
+    background-color: #58B19F;
+    padding: 2px;
+    border-radius: 6px;
+}
+
+td:nth-of-type(1) {
+    font-size: 30px;
+    font-weight: bold;    
+    color: #144878;
+}
+
+td:nth-of-type(2) {
+    font-size: 25px;
+    font-weight: bold;    
+    color: #144878;
+}
+
+th {
+    display: none;
+}
+
+.actions {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.address {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 2em 0 1em 0;
+}
+
+.close{
+    height: 40px;
+    width: 40px;
+    color:white;
+    border-radius: 50%;
+    background-color: #43C6AC;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background: #43C6AC;    
+    background: -webkit-linear-gradient(to right, #191654, #43C6AC);    
+    background: linear-gradient(to right, #191654, #43C6AC);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.content{
+    max-width: 960px;
+    max-height: 500px;
+    width: 100%;
+    height: 80vh;
+    background-color: #60a3bc;
+    /*diferenicahoriz diferenciavert desenfoque amplitud color */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 6px;
+    position: relative;
+    padding: 1em;
+    overflow-y: scroll;
+}
+
+.content-mapa{
+    
+    position: relative;
+}
+
+.fa-star, .fa-star-half-stroke {
+    color: #efd687;
+}
+
+.gradient-text {
+    background-image: linear-gradient(110deg, #36a3ff 0, #144878 50%, #000000 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+}
+
+.map{
+    margin: 0;
+    background-color: #144878;
+}
+
+.paragraph{
+    line-height: 1.8em;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.position {
+    background-color: #079992;
+    color: aliceblue;
+    padding: 0.5em;
+    border-radius: 5px;
+    margin-left: 0.5em;
+}
+
+.table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table td, .table th{
+    padding: 20px 0 20px 20px;
+    text-align: left;
+}
+
+.table tr:nth-child(even){
+    background-color: #82ccdd;
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.title-item{    
+    border-bottom: solid 2px #079992;
+    padding-bottom: 1em;
+}
+
+
+
+.title-table{
+    background-color: #079992;
+    color: #AEDBCE;    
+}
+
+@media (min-width:800px){    
+    td{
+        display: table-cell;
+        width: auto;
+    }
+    td:nth-of-type(1){
+        font-size: 1em;
+        font-weight: bold;
+        color: #144878;
+    }
+    td:nth-of-type(2) {
+        font-size: 1em;
+        font-weight: bold;
+        color: #144878;
+    }
+    th{
+        display: table-cell;
+    }
+    .content {        
+        padding: 1.8em;
+        overflow: hidden;
+    }
+    .main-image {
+        float: left;
+        margin: 0.5em 1em 0 0;
+        height: 250px;
+    }
+        
+}
+
+@media (min-height:550px){
+    .content{
+        height: 500px;        
+    }
+}
